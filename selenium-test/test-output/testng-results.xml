@@ -1,271 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-30T19:45:44 MDT" name="FullUITestSuite" finished-at="2024-04-30T19:46:42 MDT" duration-ms="58144">
+  <suite started-at="2024-05-01T14:53:56 MDT" name="AlertsTestSuite" finished-at="2024-05-01T14:54:35 MDT" duration-ms="38404">
     <groups>
     </groups>
-    <test started-at="2024-04-30T19:45:44 MDT" name="NegativePasswordTest-FF" finished-at="2024-04-30T19:45:55 MDT" duration-ms="10503">
-      <class name="theinternet.loginpagetests.NegativeLogInTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.loginpagetests.NegativeLogInTests@548d708a]" started-at="2024-04-30T19:45:44 MDT" name="setUp" finished-at="2024-04-30T19:45:49 MDT" duration-ms="4849" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@28cda624]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="negativeTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:theinternet.loginpagetests.NegativeLogInTests@548d708a]" started-at="2024-04-30T19:45:49 MDT" name="negativeTest" finished-at="2024-04-30T19:45:54 MDT" duration-ms="4717" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[incorrectPassword]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Your password is invalid!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.loginpagetests.NegativeLogInTests@548d708a]" started-at="2024-04-30T19:45:54 MDT" name="tearDown" finished-at="2024-04-30T19:45:55 MDT" duration-ms="814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.loginpagetests.NegativeLogInTests -->
-    </test> <!-- NegativePasswordTest-FF -->
-    <test started-at="2024-04-30T19:45:44 MDT" name="CheckboxesTests" finished-at="2024-04-30T19:46:01 MDT" duration-ms="16801">
-      <class name="theinternet.checkboxespagetests.CheckBoxesPageTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.checkboxespagetests.CheckBoxesPageTests@7bba5817]" started-at="2024-04-30T19:45:44 MDT" name="setUp" finished-at="2024-04-30T19:45:52 MDT" duration-ms="7780" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@387a8303]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="selectingTwoCheckboxesTest()[pri:0, instance:theinternet.checkboxespagetests.CheckBoxesPageTests@7bba5817]" started-at="2024-04-30T19:45:52 MDT" name="selectingTwoCheckboxesTest" finished-at="2024-04-30T19:46:01 MDT" duration-ms="8800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectingTwoCheckboxesTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.checkboxespagetests.CheckBoxesPageTests@7bba5817]" started-at="2024-04-30T19:46:01 MDT" name="tearDown" finished-at="2024-04-30T19:46:01 MDT" duration-ms="112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.checkboxespagetests.CheckBoxesPageTests -->
-    </test> <!-- CheckboxesTests -->
-    <test started-at="2024-04-30T19:45:44 MDT" name="NegativeUsernameTest-CH" finished-at="2024-04-30T19:46:04 MDT" duration-ms="19833">
-      <class name="theinternet.loginpagetests.NegativeLogInTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.loginpagetests.NegativeLogInTests@3a7442c7]" started-at="2024-04-30T19:45:44 MDT" name="setUp" finished-at="2024-04-30T19:45:52 MDT" duration-ms="7780" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@69504ae9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="negativeTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:theinternet.loginpagetests.NegativeLogInTests@3a7442c7]" started-at="2024-04-30T19:45:52 MDT" name="negativeTest" finished-at="2024-04-30T19:46:04 MDT" duration-ms="11837" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[incorrectUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Your username is invalid!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.loginpagetests.NegativeLogInTests@3a7442c7]" started-at="2024-04-30T19:46:04 MDT" name="tearDown" finished-at="2024-04-30T19:46:04 MDT" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.loginpagetests.NegativeLogInTests -->
-    </test> <!-- NegativeUsernameTest-CH -->
-    <test started-at="2024-04-30T19:45:44 MDT" name="PositiveLogInTest-CH" finished-at="2024-04-30T19:46:04 MDT" duration-ms="19862">
-      <class name="theinternet.loginpagetests.PositiveLogInTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.loginpagetests.PositiveLogInTests@53aac487]" started-at="2024-04-30T19:45:44 MDT" name="setUp" finished-at="2024-04-30T19:45:52 MDT" duration-ms="7788" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@7139992f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="logInTest()[pri:0, instance:theinternet.loginpagetests.PositiveLogInTests@53aac487]" started-at="2024-04-30T19:45:52 MDT" name="logInTest" finished-at="2024-04-30T19:46:04 MDT" duration-ms="11861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.loginpagetests.PositiveLogInTests@53aac487]" started-at="2024-04-30T19:46:04 MDT" name="tearDown" finished-at="2024-04-30T19:46:04 MDT" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.loginpagetests.PositiveLogInTests -->
-    </test> <!-- PositiveLogInTest-CH -->
-    <test started-at="2024-04-30T19:45:55 MDT" name="DropDownTests" finished-at="2024-04-30T19:46:08 MDT" duration-ms="12631">
-      <class name="theinternet.dropdownpagetests.DropDownTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.dropdownpagetests.DropDownTests@79e4c792]" started-at="2024-04-30T19:45:55 MDT" name="setUp" finished-at="2024-04-30T19:46:01 MDT" duration-ms="6472" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@1500b2f3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testBothDropDown()[pri:0, instance:theinternet.dropdownpagetests.DropDownTests@79e4c792]" started-at="2024-04-30T19:46:01 MDT" name="testBothDropDown" finished-at="2024-04-30T19:46:07 MDT" duration-ms="6050" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBothDropDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.dropdownpagetests.DropDownTests@79e4c792]" started-at="2024-04-30T19:46:07 MDT" name="tearDown" finished-at="2024-04-30T19:46:08 MDT" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.dropdownpagetests.DropDownTests -->
-    </test> <!-- DropDownTests -->
-    <test started-at="2024-04-30T19:46:08 MDT" name="KeyPressesTests-CH" finished-at="2024-04-30T19:46:19 MDT" duration-ms="11762">
-      <class name="theinternet.keypressestests.KeyPressesTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.keypressestests.KeyPressesTests@14028087]" started-at="2024-04-30T19:46:08 MDT" name="setUp" finished-at="2024-04-30T19:46:14 MDT" duration-ms="6521" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@475c9c31]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="pressKeyWithActionsTest()[pri:0, instance:theinternet.keypressestests.KeyPressesTests@14028087]" started-at="2024-04-30T19:46:14 MDT" name="pressKeyWithActionsTest" finished-at="2024-04-30T19:46:19 MDT" duration-ms="5138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pressKeyWithActionsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.keypressestests.KeyPressesTests@14028087]" started-at="2024-04-30T19:46:19 MDT" name="tearDown" finished-at="2024-04-30T19:46:19 MDT" duration-ms="90" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.keypressestests.KeyPressesTests -->
-    </test> <!-- KeyPressesTests-CH -->
-    <test started-at="2024-04-30T19:46:04 MDT" name="MultipleWindowTests" finished-at="2024-04-30T19:46:20 MDT" duration-ms="15514">
-      <class name="theinternet.multiplewindowpagetests.MultipleWindowstests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.multiplewindowpagetests.MultipleWindowstests@273444fe]" started-at="2024-04-30T19:46:04 MDT" name="setUp" finished-at="2024-04-30T19:46:10 MDT" duration-ms="5840" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@126253fd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="newWindowTest()[pri:0, instance:theinternet.multiplewindowpagetests.MultipleWindowstests@273444fe]" started-at="2024-04-30T19:46:10 MDT" name="newWindowTest" finished-at="2024-04-30T19:46:20 MDT" duration-ms="9581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newWindowTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.multiplewindowpagetests.MultipleWindowstests@273444fe]" started-at="2024-04-30T19:46:20 MDT" name="tearDown" finished-at="2024-04-30T19:46:20 MDT" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.multiplewindowpagetests.MultipleWindowstests -->
-    </test> <!-- MultipleWindowTests -->
-    <test started-at="2024-04-30T19:46:04 MDT" name="EditorTests" finished-at="2024-04-30T19:46:31 MDT" duration-ms="26993">
-      <class name="theinternet.editorpagetests.EditorPageTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.editorpagetests.EditorPageTests@353352b6]" started-at="2024-04-30T19:46:04 MDT" name="setUp" finished-at="2024-04-30T19:46:10 MDT" duration-ms="5871" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@57db2b13]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="defaultEditorTextValue()[pri:0, instance:theinternet.editorpagetests.EditorPageTests@353352b6]" started-at="2024-04-30T19:46:10 MDT" name="defaultEditorTextValue" finished-at="2024-04-30T19:46:31 MDT" duration-ms="21034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- defaultEditorTextValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.editorpagetests.EditorPageTests@353352b6]" started-at="2024-04-30T19:46:31 MDT" name="tearDown" finished-at="2024-04-30T19:46:31 MDT" duration-ms="84" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.editorpagetests.EditorPageTests -->
-    </test> <!-- EditorTests -->
-    <test started-at="2024-04-30T19:46:01 MDT" name="AlertTests" finished-at="2024-04-30T19:46:42 MDT" duration-ms="41324">
+    <test started-at="2024-05-01T14:53:56 MDT" name="AlertsTests" finished-at="2024-05-01T14:54:35 MDT" duration-ms="38404">
       <class name="theinternet.alertpagetests.AlertPageTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:01 MDT" name="setUp" finished-at="2024-04-30T19:46:07 MDT" duration-ms="5705" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:53:56 MDT" name="setUp" finished-at="2024-05-01T14:54:05 MDT" duration-ms="8760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -274,22 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@7eecb5b8]]>
+                <![CDATA[org.testng.TestRunner@43d38654]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsAlertTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:07 MDT" name="jsAlertTest" finished-at="2024-04-30T19:46:16 MDT" duration-ms="8877" status="PASS">
+        <test-method signature="jsAlertTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:05 MDT" name="jsAlertTest" finished-at="2024-05-01T14:54:11 MDT" duration-ms="6239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsAlertTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:16 MDT" name="tearDown" finished-at="2024-04-30T19:46:16 MDT" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:11 MDT" name="tearDown" finished-at="2024-05-01T14:54:11 MDT" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:16 MDT" name="setUp" finished-at="2024-04-30T19:46:22 MDT" duration-ms="5854" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:11 MDT" name="setUp" finished-at="2024-05-01T14:54:17 MDT" duration-ms="5136" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -298,22 +40,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@7eecb5b8]]>
+                <![CDATA[org.testng.TestRunner@43d38654]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsDismissTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:22 MDT" name="jsDismissTest" finished-at="2024-04-30T19:46:30 MDT" duration-ms="8725" status="PASS">
+        <test-method signature="jsDismissTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:17 MDT" name="jsDismissTest" finished-at="2024-05-01T14:54:22 MDT" duration-ms="5776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsDismissTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:30 MDT" name="tearDown" finished-at="2024-04-30T19:46:31 MDT" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:22 MDT" name="tearDown" finished-at="2024-05-01T14:54:22 MDT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:31 MDT" name="setUp" finished-at="2024-04-30T19:46:36 MDT" duration-ms="5101" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:22 MDT" name="setUp" finished-at="2024-05-01T14:54:27 MDT" duration-ms="5092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -322,22 +64,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@7eecb5b8]]>
+                <![CDATA[org.testng.TestRunner@43d38654]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsPromptTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:36 MDT" name="jsPromptTest" finished-at="2024-04-30T19:46:42 MDT" duration-ms="6739" status="PASS">
+        <test-method signature="jsPromptTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:27 MDT" name="jsPromptTest" finished-at="2024-05-01T14:54:34 MDT" duration-ms="7006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsPromptTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@28261e8e]" started-at="2024-04-30T19:46:42 MDT" name="tearDown" finished-at="2024-04-30T19:46:42 MDT" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:35 MDT" name="tearDown" finished-at="2024-05-01T14:54:35 MDT" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- theinternet.alertpagetests.AlertPageTests -->
-    </test> <!-- AlertTests -->
-  </suite> <!-- FullUITestSuite -->
+    </test> <!-- AlertsTests -->
+  </suite> <!-- AlertsTestSuite -->
 </testng-results>
