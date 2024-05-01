@@ -1,0 +1,81 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FullUITestSuite" verbose="1" parallel="tests" thread-count="4">
+
+	<test name="PositiveLogInTest-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="theinternet.loginpagetests.PositiveLogInTests" />
+		</classes>
+	</test>
+
+	<test name="NegativeUsernameTest-CH">
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<parameter name="expectedMessage" value="Your username is invalid!"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="theinternet.loginpagetests.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+
+	<test name="NegativePasswordTest-FF">
+		<parameter name="username" value="tomsmith"></parameter>
+		<parameter name="password" value="incorrectPassword"></parameter>
+		<parameter name="expectedMessage" value="Your password is invalid!"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class
+				name="theinternet.loginpagetests.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+
+	<test name="CheckboxesTests">
+		<classes>
+			<class
+				name="theinternet.checkboxespagetests.CheckBoxesPageTests" />
+		</classes>
+	</test>
+	<test name="DropDownTests">
+		<classes>
+			<class
+				name="theinternet.dropdownpagetests.DropDownTests" />
+		</classes>
+	</test>
+	<test name="AlertTests">
+		<classes>
+			<class
+				name="theinternet.alertpagetests.AlertPageTests" />
+		</classes>
+	</test>
+	<test name="MultipleWindowTests">
+		<classes>
+			<class
+				name="theinternet.multiplewindowpagetests.MultipleWindowstests" />
+		</classes>
+	</test>
+	<test name="EditorTests">
+		<classes>
+			<class name="theinternet.editorpagetests.EditorPageTests" />
+		</classes>
+	</test>
+	<test name="KeyPressesTests-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="theinternet.keypressestests.KeyPressesTests">
+				<methods>
+					<include name="pressKeyWithActionsTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="FileUploadTests">
+		<classes>
+			<class name="theinternet.fileuploadtests.FileUploadTests" />
+		</classes>
+	</test>
+</suite>
