@@ -9,9 +9,9 @@ import theinternet.pages.WelcomePageObject;
 
 public class FileUploadTests extends TestUtilities{
 
-	@Test
-	public void uploadFile() {
-		log.info("Starting fileUpload");
+	@Test(dataProvider = "files")
+	public void uploadFile(int no, String fileName) {
+		log.info("Starting fileUpload test #"+ no + " for "+fileName);
 
 		// open main page
 		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
@@ -19,8 +19,8 @@ public class FileUploadTests extends TestUtilities{
 
 		// Click on JavaScript Alerts link
 		FileUploaderPage uploadFilePage = welcomePage.clickFileUploadLink();
+		
 		// Select file
-		String fileName = "fruits.png";
 		uploadFilePage.selectFile(fileName);
 
 		// Push upload button
