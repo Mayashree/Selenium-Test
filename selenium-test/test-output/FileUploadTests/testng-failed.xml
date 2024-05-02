@@ -3,13 +3,13 @@
 <suite name="Failed suite [FileUploadTests]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="FileUploadTests(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.fileuploadtests.FileUploadTests">
+      <class name="theinternet.fileuploadtests.FileUploadTests">
         <methods>
-          <include name="uploadFile"/>
           <include name="tearDown"/>
+          <include name="uploadFile" invocation-numbers="0 1 2"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.fileuploadtests.FileUploadTests -->
+      </class> <!-- theinternet.fileuploadtests.FileUploadTests -->
     </classes>
   </test> <!-- FileUploadTests(failed) -->
 </suite> <!-- Failed suite [FileUploadTests] -->
