@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-01T14:53:56 MDT" name="AlertsTestSuite" finished-at="2024-05-01T14:54:35 MDT" duration-ms="38404">
+  <suite started-at="2024-05-02T11:06:49 MDT" name="FileUploadTests" finished-at="2024-05-02T11:07:07 MDT" duration-ms="17798">
     <groups>
     </groups>
-    <test started-at="2024-05-01T14:53:56 MDT" name="AlertsTests" finished-at="2024-05-01T14:54:35 MDT" duration-ms="38404">
-      <class name="theinternet.alertpagetests.AlertPageTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:53:56 MDT" name="setUp" finished-at="2024-05-01T14:54:05 MDT" duration-ms="8760" status="PASS">
+    <test started-at="2024-05-02T11:06:49 MDT" name="FileUploadTests" finished-at="2024-05-02T11:07:07 MDT" duration-ms="17798">
+      <class name="theinternet.fileuploadtests.FileUploadTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:06:49 MDT" name="setUp" finished-at="2024-05-02T11:06:56 MDT" duration-ms="7268" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,78 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@43d38654]]>
+                <![CDATA[org.testng.TestRunner@7bc6d27a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsAlertTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:05 MDT" name="jsAlertTest" finished-at="2024-05-01T14:54:11 MDT" duration-ms="6239" status="PASS">
+        <test-method signature="uploadFile(int,java.lang.String)[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:06:56 MDT" name="uploadFile" data-provider="files" finished-at="2024-05-02T11:06:56 MDT" duration-ms="18" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fruits.png]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The type java.util.Collection cannot be resolved. It is indirectly referenced from required type org.testng.ITestContext
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The type java.util.Collection cannot be resolved. It is indirectly referenced from required type org.testng.ITestContext
+
+at theinternet.pages.BasePageObject.<init>(BasePageObject.java:1)
+at theinternet.pages.WelcomePageObject.<init>(WelcomePageObject.java:19)
+at theinternet.fileuploadtests.FileUploadTests.uploadFile(FileUploadTests.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsAlertTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:11 MDT" name="tearDown" finished-at="2024-05-01T14:54:11 MDT" duration-ms="107" status="PASS">
+        </test-method> <!-- uploadFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:06:56 MDT" name="tearDown" finished-at="2024-05-02T11:06:56 MDT" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:11 MDT" name="setUp" finished-at="2024-05-01T14:54:17 MDT" duration-ms="5136" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:06:56 MDT" name="setUp" finished-at="2024-05-02T11:07:01 MDT" duration-ms="5106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,22 +96,78 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@43d38654]]>
+                <![CDATA[org.testng.TestRunner@7bc6d27a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsDismissTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:17 MDT" name="jsDismissTest" finished-at="2024-05-01T14:54:22 MDT" duration-ms="5776" status="PASS">
+        <test-method signature="uploadFile(int,java.lang.String)[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:07:01 MDT" name="uploadFile" data-provider="files" finished-at="2024-05-02T11:07:01 MDT" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[index.html]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The type java.util.Collection cannot be resolved. It is indirectly referenced from required type org.testng.ITestContext
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The type java.util.Collection cannot be resolved. It is indirectly referenced from required type org.testng.ITestContext
+
+at theinternet.pages.BasePageObject.<init>(BasePageObject.java:1)
+at theinternet.pages.WelcomePageObject.<init>(WelcomePageObject.java:19)
+at theinternet.fileuploadtests.FileUploadTests.uploadFile(FileUploadTests.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsDismissTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:22 MDT" name="tearDown" finished-at="2024-05-01T14:54:22 MDT" duration-ms="95" status="PASS">
+        </test-method> <!-- uploadFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:07:01 MDT" name="tearDown" finished-at="2024-05-02T11:07:01 MDT" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:22 MDT" name="setUp" finished-at="2024-05-01T14:54:27 MDT" duration-ms="5092" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:07:01 MDT" name="setUp" finished-at="2024-05-02T11:07:07 MDT" duration-ms="5054" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,22 +176,78 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@43d38654]]>
+                <![CDATA[org.testng.TestRunner@7bc6d27a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="jsPromptTest()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:27 MDT" name="jsPromptTest" finished-at="2024-05-01T14:54:34 MDT" duration-ms="7006" status="PASS">
+        <test-method signature="uploadFile(int,java.lang.String)[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:07:07 MDT" name="uploadFile" data-provider="files" finished-at="2024-05-02T11:07:07 MDT" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[text.txt]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The type java.util.Collection cannot be resolved. It is indirectly referenced from required type org.testng.ITestContext
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The type java.util.Collection cannot be resolved. It is indirectly referenced from required type org.testng.ITestContext
+
+at theinternet.pages.BasePageObject.<init>(BasePageObject.java:1)
+at theinternet.pages.WelcomePageObject.<init>(WelcomePageObject.java:19)
+at theinternet.fileuploadtests.FileUploadTests.uploadFile(FileUploadTests.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsPromptTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.alertpagetests.AlertPageTests@506ae4d4]" started-at="2024-05-01T14:54:35 MDT" name="tearDown" finished-at="2024-05-01T14:54:35 MDT" duration-ms="96" status="PASS">
+        </test-method> <!-- uploadFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:07:07 MDT" name="tearDown" finished-at="2024-05-02T11:07:07 MDT" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.alertpagetests.AlertPageTests -->
-    </test> <!-- AlertsTests -->
-  </suite> <!-- AlertsTestSuite -->
+      </class> <!-- theinternet.fileuploadtests.FileUploadTests -->
+    </test> <!-- FileUploadTests -->
+  </suite> <!-- FileUploadTests -->
 </testng-results>
