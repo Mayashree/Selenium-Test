@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import theinternet.base.TestUtilities;
 import theinternet.pages.MultipleWindowPage;
 import theinternet.pages.NewWindowPage;
-import theinternet.pages.WelcomePageObject;
+import theinternet.pages.WelcomePage;
 
 public class MultipleWindowstests extends TestUtilities {
 	@Test
@@ -14,7 +14,7 @@ public class MultipleWindowstests extends TestUtilities {
 		log.info("Starting newWindowTest");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// Click on MultipleWindows link

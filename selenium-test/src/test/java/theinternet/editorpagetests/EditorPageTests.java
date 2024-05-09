@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 import theinternet.base.TestUtilities;
 import theinternet.pages.EditorPage;
-import theinternet.pages.WelcomePageObject;
+import theinternet.pages.WelcomePage;
 
 public class EditorPageTests extends TestUtilities {
 	@Test
 	public void defaultEditorTextValue() {
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// Click on WYSIWYG Editor link

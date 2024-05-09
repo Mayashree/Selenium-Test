@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import theinternet.base.TestUtilities;
 import theinternet.pages.CheckBoxesPage;
-import theinternet.pages.WelcomePageObject;
+import theinternet.pages.WelcomePage;
 
 
 public class CheckBoxesPageTests extends TestUtilities{
@@ -15,7 +15,7 @@ public class CheckBoxesPageTests extends TestUtilities{
 	log.info("Starting selectingTwoCheckboxesTest");
 	
 	/** open main page */
-	WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+	WelcomePage welcomePage = new WelcomePage(driver, log);
 	welcomePage.openPage();
 	/** Click on the checkBox Link Text */
 	welcomePage.clickCheckboxesLink();
