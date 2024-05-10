@@ -4,7 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MultipleWindowPage extends BasePageObject{
+public class MultipleWindowPage extends BasePage{
 	private By clickHereLinkLocator = By.linkText("Click Here");
 	public MultipleWindowPage(WebDriver driver,Logger log) {
 		super(driver,log);

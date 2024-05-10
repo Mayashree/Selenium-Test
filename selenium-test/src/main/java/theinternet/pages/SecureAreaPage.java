@@ -4,7 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SecureAreaPage extends BasePageObject{
+public class SecureAreaPage extends BasePage{
 	private String pageUrl = "https://the-internet.herokuapp.com/secure";
 	private String expectedSuccessMessage = "You logged into a secure area!";
 	private By logOutButton = By.xpath("//a[@class='button secondary radius']");

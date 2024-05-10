@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-public class KeyPressesPage extends BasePageObject{
+public class KeyPressesPage extends BasePage{
 
 	private String pageUrl = "http://the-internet.herokuapp.com/key_presses";
 	private By body = By.xpath("//body");

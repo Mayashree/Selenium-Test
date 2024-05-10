@@ -5,7 +5,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class AlertsPage extends BasePageObject{
+public class AlertsPage extends BasePage{
 
 	public AlertsPage(WebDriver driver, Logger log) {
 		
