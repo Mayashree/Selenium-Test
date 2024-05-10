@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import theinternet.base.TestUtilities;
 import theinternet.pages.AlertsPage;
-import theinternet.pages.WelcomePageObject;
+import theinternet.pages.WelcomePage;
 
 public class AlertPageTests extends TestUtilities {
 
@@ -14,7 +14,7 @@ public class AlertPageTests extends TestUtilities {
 			log.info("Starting jsAlertTest");
 
 			// open main page
-			WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+			WelcomePage welcomePage = new WelcomePage(driver, log);
 			welcomePage.openPage();
 
 			// Click on JavaScript Alerts link
@@ -48,7 +48,7 @@ public class AlertPageTests extends TestUtilities {
 			log.info("Starting jsDismissTest");
 
 			// open main page
-			WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+			WelcomePage welcomePage = new WelcomePage(driver, log);
 			welcomePage.openPage();
 
 			// Click on JavaScript Alerts link
@@ -81,7 +81,7 @@ public class AlertPageTests extends TestUtilities {
 			log.info("Starting jsDismissTest");
 
 			// open main page
-			WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+			WelcomePage welcomePage = new WelcomePage(driver, log);
 			welcomePage.openPage();
 
 			// Click on JavaScript Alerts link

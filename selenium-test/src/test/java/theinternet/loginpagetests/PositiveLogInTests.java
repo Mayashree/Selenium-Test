@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 import theinternet.base.TestUtilities;
 import theinternet.pages.LogInPage;
 import theinternet.pages.SecureAreaPage;
-import theinternet.pages.WelcomePageObject;
+import theinternet.pages.WelcomePage;
 
 public class PositiveLogInTests extends TestUtilities{
 	@Test
 	public void logInTest() {
 		log.info("Starting logIn test");
-		WelcomePageObject welcomePage = new WelcomePageObject(driver,log);
+		WelcomePage welcomePage = new WelcomePage(driver,log);
 			
 		/** Open main page */
 		welcomePage.openPage();
