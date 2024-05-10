@@ -33,11 +33,6 @@ public class WelcomePage extends BasePage {
 		click(formAuthenticationLinkLocator);
 		return new LogInPage(driver, log);
 	}
-	public JavaScriptAlertsPage clickJavaScriptAlertsLink() {
-		log.info("Clicking JavaScript Alerts link on Welcome Page");
-		click(javaScriptAlertsLinkLocator);
-		return new JavaScriptAlertsPage(driver, log);
-	}
 
 	/** Open CheckBoxes Page by Clicking form CheckBoxes Link Text */
 
