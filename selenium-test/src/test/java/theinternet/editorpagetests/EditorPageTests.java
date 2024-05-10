@@ -13,16 +13,18 @@ public class EditorPageTests extends TestUtilities {
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
-
+		// Scroll to the bottom
+		
+		welcomePage.scrollToBottom();
+		
 		// Click on WYSIWYG Editor link
 		EditorPage editorPage = welcomePage.clickWYSIWYGEditorLink();
-		
+
 		// Get WYSIWYG Editor default text
 		String editorText = editorPage.getEditorText();
 		Assert.assertTrue(editorText.equals("Your content goes here."),
-				"Editor default text is not equal to expected text " + editorText );
+				"Editor default text is not equal to expected text " + editorText);
 
-		
 	}
 
 }

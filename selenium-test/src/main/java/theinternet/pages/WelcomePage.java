@@ -4,7 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class WelcomePage extends BasePageObject {
+public class WelcomePage extends BasePage {
 	private String pageUrl = "https://the-internet.herokuapp.com/";
 	private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
 	private By checboxesLinkLocator = By.linkText("Checkboxes");
@@ -14,6 +14,7 @@ public class WelcomePage extends BasePageObject {
 	private By WYSIWYGEditorLinkLocator = By.linkText("WYSIWYG Editor");
 	private By KeyPressesLinkLocator = By.linkText("Key Presses");
 	private By FileUploadLinkLocator = By.linkText("File Upload");
+	
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);

@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class CheckBoxesPage extends BasePageObject{
+public class CheckBoxesPage extends BasePage{
 	private By checkbox = By.xpath("//input[@type='checkbox']");
 	public CheckBoxesPage(WebDriver driver,Logger log) {
 		super(driver,log);

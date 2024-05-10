@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import java.time.Duration;
 
-public class LogInPage extends BasePageObject{
+public class LogInPage extends BasePage{
 
 	private By usernameLocator = By.id("username");
 	private By passwordLocator = By.id("password");
