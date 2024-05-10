@@ -5,35 +5,33 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class AlertsPage extends BasePage{
+public class JavaScriptAlertsPage extends BasePage{
+	private By clickForJSAlertButtonLocator = By.xpath("//button[text()='Click for JS Alert']");
+	private By clickForJSConfirmButtonLocator = By.xpath("//button[text()='Click for JS Confirm']");
+	private By clickForJSPromptButtonLocator = By.xpath("//button[text()='Click for JS Prompt']");
+	private By resultTextLocator = By.id("result");
 
-	public AlertsPage(WebDriver driver, Logger log) {
-		
+	public JavaScriptAlertsPage(WebDriver driver, Logger log) {
 		super(driver,log);
+		
 	}
-	private By jsAlertButtonLocator = By.xpath("//button[text()='Click for JS Alert']");
-	private By jsConfirmButtonLocator = By.xpath("//button[text()='Click for JS Confirm']");
-	private By jsPromptButtonLocator = By.xpath("//button[text()='Click for JS Prompt']");
-	private By resultMessageLocator = By.id("result");
-
-	
 	/** Clicking on 'Click for JS Alert' button to open alert */
 	public void openJSAlert() {
 		log.info("Clicking on 'Click for JS Alert' button to open alert");
-		click(jsAlertButtonLocator);
+		click(clickForJSAlertButtonLocator);
 
 	}
 
 	/** Clicking on 'Click for JS Confirm' button to open alert */
 	public void openJSConfirm() {
 		log.info("Clicking on 'Click for JS Confirm' button to open alert");
-		click(jsConfirmButtonLocator);
+		click(clickForJSConfirmButtonLocator);
 	}
 
 	/** Clicking on 'Click for JS Prompt' button to open alert */
 	public void openJSPrompt() {
 		log.info("Clicking on 'Click for JS Prompt' button to open alert");
-		click(jsPromptButtonLocator);
+		click(clickForJSPromptButtonLocator);
 	}
 
 	/** Switch to alert and get it's message */
@@ -68,7 +66,7 @@ public class AlertsPage extends BasePage{
 
 	/** Get result text */
 	public String getResultText() {
-		String result = find(resultMessageLocator).getText();
+		String result = find(resultTextLocator).getText();
 		log.info("Result text: " + result);
 		return result;
 	}

@@ -4,7 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class FileUploaderPage extends BasePageObject{
+public class FileUploaderPage extends BasePage{
 	private By chooseFileFieldLocator = By.id("file-upload");
 	private By uploadButtonLocator = By.id("file-submit");
 	private By uploadedFilesLocator = By.id("uploaded-files");

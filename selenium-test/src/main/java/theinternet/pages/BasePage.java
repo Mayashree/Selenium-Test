@@ -18,11 +18,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BasePageObject {
+public class BasePage {
 	protected WebDriver driver;
 	protected Logger log;
 
-	public BasePageObject(WebDriver driver, Logger log) {
+	public BasePage(WebDriver driver, Logger log) {
 		this.driver = driver;
 		this.log = log;
 

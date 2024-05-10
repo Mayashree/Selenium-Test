@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class DropdownPage extends BasePageObject{
+public class DropdownPage extends BasePage{
 	private By dropDown = By.id("dropdown");
 
 	public DropdownPage(WebDriver driver,Logger log) {
