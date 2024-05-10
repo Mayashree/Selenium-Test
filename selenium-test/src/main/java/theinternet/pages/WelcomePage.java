@@ -14,7 +14,7 @@ public class WelcomePage extends BasePage {
 	private By WYSIWYGEditorLinkLocator = By.linkText("WYSIWYG Editor");
 	private By KeyPressesLinkLocator = By.linkText("Key Presses");
 	private By FileUploadLinkLocator = By.linkText("File Upload");
-	private By javaScriptAlertsLinkLocator = By.linkText("JavaScript Alerts");
+	
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
