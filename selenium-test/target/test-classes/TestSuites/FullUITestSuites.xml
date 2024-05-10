@@ -78,4 +78,14 @@
 			<class name="theinternet.fileuploadtests.FileUploadTests" />
 		</classes>
 	</test>
+	<test name="DragAndDropTests">
+		<classes>
+			<class name="theinternet.draganddroppagetests.DragAndDropPageTests" />
+		</classes>
+	</test>
+	<test name="HoversTests">
+		<classes>
+			<class name="theinternet.hoverspagetests.HoversPageTests" />
+		</classes>
+	</test>
 </suite>

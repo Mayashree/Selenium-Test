@@ -12,10 +12,10 @@ public class WelcomePage extends BasePage {
 	private By alertLinkLocator = By.linkText("JavaScript Alerts");
 	private By multipleWindowLinkLocator = By.linkText("Multiple Windows");
 	private By WYSIWYGEditorLinkLocator = By.linkText("WYSIWYG Editor");
-	private By KeyPressesLinkLocator = By.linkText("Key Presses");
-	private By FileUploadLinkLocator = By.linkText("File Upload");
+	private By keyPressesLinkLocator = By.linkText("Key Presses");
+	private By fileUploadLinkLocator = By.linkText("File Upload");
 	private By dragAndDropLinkLocator = By.linkText("Drag and Drop");
-	
+	private By hoversLinkLocator = By.linkText("Hovers");
 
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -72,13 +72,13 @@ public class WelcomePage extends BasePage {
 	/** Open Key Presses Page by Clicking form Key Presses Link Text */
 	public KeyPressesPage clickKeyPressesLink() {
 		log.info("Clicking Key Presses Link on Welcome Page");
-		click(KeyPressesLinkLocator);
+		click(keyPressesLinkLocator);
 		return new KeyPressesPage(driver, log);
 	}
 	/** Open File Upload Page by Clicking form File Upload Link Text */
 	public FileUploaderPage clickFileUploadLink() {
 		log.info("Clicking File Upload Link on Welcome Page");
-		click(FileUploadLinkLocator);
+		click(fileUploadLinkLocator);
 		return new FileUploaderPage(driver, log);
 	}
 	
@@ -87,5 +87,11 @@ public class WelcomePage extends BasePage {
 		log.info("Clicking Drag and Drop Link on Welcome Page");
 		click(dragAndDropLinkLocator);
 		return new DragAndDropPage(driver, log);
+	}
+	/** Open Hovers Page by Clicking form Hovers Link Text */
+	public HoversPage hoversLink() {
+		log.info("Clicking Hovers Link on Welcome Page");
+		click(hoversLinkLocator);
+		return new HoversPage(driver, log);
 	}
 }
