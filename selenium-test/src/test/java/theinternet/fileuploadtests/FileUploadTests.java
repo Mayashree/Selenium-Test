@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import theinternet.base.TestUtilities;
 import theinternet.pages.FileUploaderPage;
-import theinternet.pages.WelcomePageObject;
+import theinternet.pages.WelcomePage;
 
 public class FileUploadTests extends TestUtilities{
 
@@ -14,7 +14,7 @@ public class FileUploadTests extends TestUtilities{
 		log.info("Starting fileUpload test #"+ no + " for "+fileName);
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// Click on JavaScript Alerts link

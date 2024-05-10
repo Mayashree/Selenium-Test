@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 import theinternet.base.TestUtilities;
 import theinternet.pages.DropdownPage;
-import theinternet.pages.WelcomePageObject;
+import theinternet.pages.WelcomePage;
 
 public class DropDownTests extends TestUtilities {
 	@Test
 	public void testBothDropDown() {
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// Click on DropDown link
