@@ -1,0 +1,9 @@
+package theinternet.pages;
+
+public class JavaScriptAlertsPage {
+
+	public JavaScriptAlertsPage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
