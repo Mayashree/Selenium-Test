@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-10T14:19:28 MDT" name="DragAndDropTestSuite" finished-at="2024-05-10T14:19:39 MDT" duration-ms="11126">
+  <suite started-at="2024-05-10T14:42:27 MDT" name="HoversTestSuite" finished-at="2024-05-10T14:42:44 MDT" duration-ms="17439">
     <groups>
     </groups>
-    <test started-at="2024-05-10T14:19:28 MDT" name="DragAndDropTests" finished-at="2024-05-10T14:19:39 MDT" duration-ms="11126">
-      <class name="theinternet.draganddroppagetests.DragAndDropPageTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.draganddroppagetests.DragAndDropPageTests@6574a52c]" started-at="2024-05-10T14:19:28 MDT" name="setUp" finished-at="2024-05-10T14:19:35 MDT" duration-ms="7558" status="PASS">
+    <test started-at="2024-05-10T14:42:27 MDT" name="HoversTests-CH" finished-at="2024-05-10T14:42:39 MDT" duration-ms="11526">
+      <class name="theinternet.hoverspagetests.HoversPageTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.hoverspagetests.HoversPageTests@60099951]" started-at="2024-05-10T14:42:27 MDT" name="setUp" finished-at="2024-05-10T14:42:35 MDT" duration-ms="7528" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,50 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@b2f4ece]]>
+                <![CDATA[org.testng.TestRunner@39fa8ad2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="dragAToBTest()[pri:0, instance:theinternet.draganddroppagetests.DragAndDropPageTests@6574a52c]" started-at="2024-05-10T14:19:35 MDT" name="dragAToBTest" finished-at="2024-05-10T14:19:39 MDT" duration-ms="3413" status="PASS">
+        <test-method signature="user2ProfileTest()[pri:0, instance:theinternet.hoverspagetests.HoversPageTests@60099951]" started-at="2024-05-10T14:42:35 MDT" name="user2ProfileTest" finished-at="2024-05-10T14:42:38 MDT" duration-ms="3831" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragAToBTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.draganddroppagetests.DragAndDropPageTests@6574a52c]" started-at="2024-05-10T14:19:39 MDT" name="tearDown" finished-at="2024-05-10T14:19:39 MDT" duration-ms="97" status="PASS">
+        </test-method> <!-- user2ProfileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.hoverspagetests.HoversPageTests@60099951]" started-at="2024-05-10T14:42:38 MDT" name="tearDown" finished-at="2024-05-10T14:42:39 MDT" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.draganddroppagetests.DragAndDropPageTests -->
-    </test> <!-- DragAndDropTests -->
-  </suite> <!-- DragAndDropTestSuite -->
+      </class> <!-- theinternet.hoverspagetests.HoversPageTests -->
+    </test> <!-- HoversTests-CH -->
+    <test started-at="2024-05-10T14:42:39 MDT" name="HoversTests-FF" finished-at="2024-05-10T14:42:44 MDT" duration-ms="5885">
+      <class name="theinternet.hoverspagetests.HoversPageTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.hoverspagetests.HoversPageTests@5890e879]" started-at="2024-05-10T14:42:39 MDT" name="setUp" finished-at="2024-05-10T14:42:42 MDT" duration-ms="3472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@76ddd61a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="user2ProfileTest()[pri:0, instance:theinternet.hoverspagetests.HoversPageTests@5890e879]" started-at="2024-05-10T14:42:42 MDT" name="user2ProfileTest" finished-at="2024-05-10T14:42:44 MDT" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user2ProfileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.hoverspagetests.HoversPageTests@5890e879]" started-at="2024-05-10T14:42:44 MDT" name="tearDown" finished-at="2024-05-10T14:42:44 MDT" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- theinternet.hoverspagetests.HoversPageTests -->
+    </test> <!-- HoversTests-FF -->
+  </suite> <!-- HoversTestSuite -->
 </testng-results>

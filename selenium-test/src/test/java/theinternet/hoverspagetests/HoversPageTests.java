@@ -1,15 +1,16 @@
 package theinternet.hoverspagetests;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import theinternet.base.TestUtilities;
 import theinternet.pages.HoversPage;
 import theinternet.pages.WelcomePage;
 
 public class HoversPageTests extends TestUtilities{
+	@Test
 	public void user2ProfileTest() {
 		log.info("Starting user2ProfileTest");
-
 		// Open HoversPage
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();

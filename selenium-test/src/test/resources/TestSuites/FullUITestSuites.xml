@@ -83,7 +83,15 @@
 			<class name="theinternet.draganddroppagetests.DragAndDropPageTests" />
 		</classes>
 	</test>
-	<test name="HoversTests">
+	<test name="HoversTests-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="theinternet.hoverspagetests.HoversPageTests" />
+		</classes>
+	</test>
+
+	<test name="HoversTests-FF">
+		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="theinternet.hoverspagetests.HoversPageTests" />
 		</classes>
