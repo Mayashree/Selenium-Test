@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-10T11:17:40 MDT" name="EditorTestSuite" finished-at="2024-05-10T11:18:09 MDT" duration-ms="29234">
+  <suite started-at="2024-05-10T14:19:28 MDT" name="DragAndDropTestSuite" finished-at="2024-05-10T14:19:39 MDT" duration-ms="11126">
     <groups>
     </groups>
-    <test started-at="2024-05-10T11:17:40 MDT" name="EditorTests" finished-at="2024-05-10T11:18:09 MDT" duration-ms="29234">
-      <class name="theinternet.editorpagetests.EditorPageTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.editorpagetests.EditorPageTests@6574a52c]" started-at="2024-05-10T11:17:40 MDT" name="setUp" finished-at="2024-05-10T11:17:46 MDT" duration-ms="6697" status="PASS">
+    <test started-at="2024-05-10T14:19:28 MDT" name="DragAndDropTests" finished-at="2024-05-10T14:19:39 MDT" duration-ms="11126">
+      <class name="theinternet.draganddroppagetests.DragAndDropPageTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.draganddroppagetests.DragAndDropPageTests@6574a52c]" started-at="2024-05-10T14:19:28 MDT" name="setUp" finished-at="2024-05-10T14:19:35 MDT" duration-ms="7558" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2eaef76d]]>
+                <![CDATA[org.testng.TestRunner@b2f4ece]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="defaultEditorTextValue()[pri:0, instance:theinternet.editorpagetests.EditorPageTests@6574a52c]" started-at="2024-05-10T11:17:46 MDT" name="defaultEditorTextValue" finished-at="2024-05-10T11:18:09 MDT" duration-ms="22373" status="PASS">
+        <test-method signature="dragAToBTest()[pri:0, instance:theinternet.draganddroppagetests.DragAndDropPageTests@6574a52c]" started-at="2024-05-10T14:19:35 MDT" name="dragAToBTest" finished-at="2024-05-10T14:19:39 MDT" duration-ms="3413" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- defaultEditorTextValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.editorpagetests.EditorPageTests@6574a52c]" started-at="2024-05-10T11:18:09 MDT" name="tearDown" finished-at="2024-05-10T11:18:09 MDT" duration-ms="111" status="PASS">
+        </test-method> <!-- dragAToBTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.draganddroppagetests.DragAndDropPageTests@6574a52c]" started-at="2024-05-10T14:19:39 MDT" name="tearDown" finished-at="2024-05-10T14:19:39 MDT" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- theinternet.editorpagetests.EditorPageTests -->
-    </test> <!-- EditorTests -->
-  </suite> <!-- EditorTestSuite -->
+      </class> <!-- theinternet.draganddroppagetests.DragAndDropPageTests -->
+    </test> <!-- DragAndDropTests -->
+  </suite> <!-- DragAndDropTestSuite -->
 </testng-results>
