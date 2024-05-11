@@ -12,10 +12,10 @@ public class PositiveLogInTests extends TestUtilities{
 	@Test
 	public void logInTest() {
 		log.info("Starting logIn test");
-		WelcomePage welcomePage = new WelcomePage(driver,log);
-		takeScreenshot("WelcomePage opened");	
+		WelcomePage welcomePage = new WelcomePage(driver,log);	
 		/** Open main page */
 		welcomePage.openPage();
+		takeScreenshot("WelcomePage opened");
 		log.info("Main page is opened.");
 
 		/** Click on Form Authentication link */
