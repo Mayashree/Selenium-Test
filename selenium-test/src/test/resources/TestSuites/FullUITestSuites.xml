@@ -96,4 +96,9 @@
 			<class name="theinternet.hoverspagetests.HoversPageTests" />
 		</classes>
 	</test>
+	<test name="SlidersPageTests">
+		<classes>
+			<class name="theinternet.sliderspagetests.SlidersPageTests" />
+		</classes>
+	</test>
 </suite>
