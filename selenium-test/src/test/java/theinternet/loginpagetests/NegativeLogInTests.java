@@ -1,26 +1,32 @@
 package theinternet.loginpagetests;
 
-import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import java.util.Map;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import theinternet.base.CsvDataProviders;
 import theinternet.base.TestUtilities;
 import theinternet.pages.LogInPage;
 import theinternet.pages.WelcomePage;
 
 public class NegativeLogInTests extends TestUtilities {
-	@Parameters({ "username", "password", "expectedMessage" })
-	@Test(priority = 1)
-	public void negativeTest(String username, String password, String expectedErrorMessage) {
-		log.info("Starting negativeTest");
-		LogInPage logInPage = new LogInPage(driver, log);
-		WelcomePage welcomePage = new WelcomePage(driver, log);
+	@Test(priority = 1, dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class)
+	public void negativeLogInTest(Map<String, String> testData) {
+		// Data
+		String no = testData.get("no");
+		String username = testData.get("username");
+		String password = testData.get("password");
+		String expectedErrorMessage = testData.get("expectedMessage");
+		String description = testData.get("description");
 
-		/** Open Main Page */
+		log.info("Starting negativeLogInTest #" + no + " for " + description);
+
+		// open main page
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		/** Click on Form Authentication link */
-		logInPage = welcomePage.clickFormAuthenticationLink();
+		LogInPage logInPage = welcomePage.clickFormAuthenticationLink();
 
 		/** enter userName and password */
 		logInPage.negativeLogIn(username, password);
