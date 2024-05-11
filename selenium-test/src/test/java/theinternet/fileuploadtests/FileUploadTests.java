@@ -11,7 +11,6 @@ public class FileUploadTests extends TestUtilities{
 
 	@Test(dataProvider = "files")
 	public void uploadFile(int no, String fileName) {
-		log.info("Starting fileUpload test #"+ no + " for "+fileName);
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);

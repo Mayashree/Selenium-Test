@@ -1,10 +1,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="SmokeTestSuite" verbose="1">
+	<listeners>
+		<listener class-name="theinternet.base.TestListener"></listener>
+	</listeners>
 	
 	<test name="PositiveLogInTest">
 		<classes>
 			<class name="theinternet.loginpagetests.PositiveLogInTests" />
+		</classes>
+	</test>
+	<test name="AlertTests">
+		<classes>
+			<class
+				name="theinternet.alertpagetests.AlertPageTests" />
+		</classes>
+	</test>
+	<test name="FileUploadTests">
+		<classes>
+			<class name="theinternet.fileuploadtests.FileUploadTests" />
 		</classes>
 	</test>
 	

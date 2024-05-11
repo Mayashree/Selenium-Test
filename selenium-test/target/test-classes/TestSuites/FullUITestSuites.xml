@@ -1,7 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="FullUITestSuite" verbose="1" parallel="tests" thread-count="4">
-
+	<listeners>
+		<listener class-name="theinternet.base.TestListener"></listener>
+	</listeners>
 	<test name="PositiveLogInTest-CH">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
@@ -108,6 +110,12 @@
 	<test name="SlidersPageTests">
 		<classes>
 			<class name="theinternet.sliderspagetests.SlidersPageTests" />
+		</classes>
+	</test>
+	<test name="JavaScriptErrorPageTests">
+		<classes>
+			<class
+				name="theinternet.javascripterrorpagetests.JavaScriptErrorPageTests" />
 		</classes>
 	</test>
 </suite>

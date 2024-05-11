@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="CheckBoxTestSuite" verbose="1">
+<suite name="JavaScriptErrorPageTestSuite" verbose="1">
 	<listeners>
 		<listener class-name="theinternet.base.TestListener"></listener>
 	</listeners>
-	<test name="CheckBoxTestSuite">
+	<test name="JavaScriptErrorPageTests">
 		<classes>
-			<class name="theinternet.checkboxespagetests.CheckBoxesPageTests" />
+			<class name="theinternet.javascripterrorpagetests.JavaScriptErrorPageTests" />
 		</classes>
 	</test>
 	
