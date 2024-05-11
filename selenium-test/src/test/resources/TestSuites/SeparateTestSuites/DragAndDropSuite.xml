@@ -1,9 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="DragAndDropTestSuite" verbose="1">
-	<listeners>
-		<listener class-name="theinternet.base.TestListener"></listener>
-	</listeners>
 	<test name="DragAndDropTests">
 		<classes>
 			<class name="theinternet.draganddroppagetests.DragAndDropPageTests" />
