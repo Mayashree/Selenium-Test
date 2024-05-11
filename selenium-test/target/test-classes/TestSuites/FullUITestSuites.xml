@@ -9,11 +9,19 @@
 				name="theinternet.loginpagetests.PositiveLogInTests" />
 		</classes>
 	</test>
-
+	<test name="NegativeLogInTest-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="theinternet.loginpagetests.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+	<!--
 	<test name="NegativeUsernameTest-CH">
 		<parameter name="username" value="incorrectUsername"></parameter>
 		<parameter name="password" value="SuperSecretPassword!"></parameter>
-		<parameter name="expectedMessage" value="Your username is invalid!"></parameter>
+		<parameter name="expectedMessage" value="Your username is
+	invalid!"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class
@@ -25,7 +33,8 @@
 	<test name="NegativePasswordTest-FF">
 		<parameter name="username" value="tomsmith"></parameter>
 		<parameter name="password" value="incorrectPassword"></parameter>
-		<parameter name="expectedMessage" value="Your password is invalid!"></parameter>
+		<parameter name="expectedMessage" value="Your password is
+	invalid!"></parameter>
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class
@@ -33,7 +42,7 @@
 			</class>
 		</classes>
 	</test>
-
+	-->
 	<test name="CheckboxesTests">
 		<classes>
 			<class
