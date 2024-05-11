@@ -110,4 +110,9 @@
 			<class name="theinternet.sliderspagetests.SlidersPageTests" />
 		</classes>
 	</test>
+		<test name="JavaScriptErrorPageTests">
+		<classes>
+			<class name="theinternet.javascripterrorpagetests.JavaScriptErrorPageTests" />
+		</classes>
+	</test>
 </suite>
