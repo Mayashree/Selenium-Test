@@ -13,12 +13,18 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-10T11:17:40 MDT" name="EditorTestSuite" finished-at="2024-05-10T11:18:09 MDT" duration-ms="29234">
+  <suite started-at="2024-05-10T22:03:43 MDT" name="SlidersPageTestSuite" finished-at="2024-05-10T22:04:00 MDT" duration-ms="16828">
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2024-05-10T11:17:40 MDT" name="EditorTests" finished-at="2024-05-10T11:18:09 MDT" duration-ms="29234">
       <class name="theinternet.editorpagetests.EditorPageTests">
         <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.editorpagetests.EditorPageTests@6574a52c]" started-at="2024-05-10T11:17:40 MDT" name="setUp" finished-at="2024-05-10T11:17:46 MDT" duration-ms="6697" status="PASS">
+>>>>>>> develop
+=======
+    <test started-at="2024-05-10T22:03:43 MDT" name="SlidersPageTests" finished-at="2024-05-10T22:04:00 MDT" duration-ms="16828">
+      <class name="theinternet.sliderspagetests.SlidersPageTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:theinternet.sliderspagetests.SlidersPageTests@6574a52c]" started-at="2024-05-10T22:03:43 MDT" name="setUp" finished-at="2024-05-10T22:03:51 MDT" duration-ms="8099" status="PASS">
 >>>>>>> develop
           <params>
             <param index="0">
@@ -29,9 +35,13 @@
             <param index="1">
               <value>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@7bc6d27a]]>
 =======
                 <![CDATA[org.testng.TestRunner@2eaef76d]]>
+>>>>>>> develop
+=======
+                <![CDATA[org.testng.TestRunner@61e7bf2f]]>
 >>>>>>> develop
               </value>
             </param>
@@ -39,6 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="uploadFile(int,java.lang.String)[pri:0, instance:theinternet.fileuploadtests.FileUploadTests@2e3967ea]" started-at="2024-05-02T11:06:56 MDT" name="uploadFile" data-provider="files" finished-at="2024-05-02T11:06:56 MDT" duration-ms="18" status="FAIL">
           <params>
@@ -269,15 +280,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
   </suite> <!-- FileUploadTests -->
 =======
         <test-method signature="defaultEditorTextValue()[pri:0, instance:theinternet.editorpagetests.EditorPageTests@6574a52c]" started-at="2024-05-10T11:17:46 MDT" name="defaultEditorTextValue" finished-at="2024-05-10T11:18:09 MDT" duration-ms="22373" status="PASS">
+=======
+        <test-method signature="sliderTest()[pri:0, instance:theinternet.sliderspagetests.SlidersPageTests@6574a52c]" started-at="2024-05-10T22:03:51 MDT" name="sliderTest" finished-at="2024-05-10T22:03:59 MDT" duration-ms="8566" status="PASS">
+>>>>>>> develop
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- defaultEditorTextValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.editorpagetests.EditorPageTests@6574a52c]" started-at="2024-05-10T11:18:09 MDT" name="tearDown" finished-at="2024-05-10T11:18:09 MDT" duration-ms="111" status="PASS">
+        </test-method> <!-- sliderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theinternet.sliderspagetests.SlidersPageTests@6574a52c]" started-at="2024-05-10T22:03:59 MDT" name="tearDown" finished-at="2024-05-10T22:04:00 MDT" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
       </class> <!-- theinternet.editorpagetests.EditorPageTests -->
     </test> <!-- EditorTests -->
   </suite> <!-- EditorTestSuite -->
+>>>>>>> develop
+=======
+      </class> <!-- theinternet.sliderspagetests.SlidersPageTests -->
+    </test> <!-- SlidersPageTests -->
+  </suite> <!-- SlidersPageTestSuite -->
 >>>>>>> develop
 </testng-results>
