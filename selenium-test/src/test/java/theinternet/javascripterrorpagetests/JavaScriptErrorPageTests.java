@@ -12,7 +12,7 @@ import theinternet.pages.WelcomePage;
 public class JavaScriptErrorPageTests extends TestUtilities{
 	@Test
 	public void jsErrorTest() {
-		log.info("Starting jsErrorTest");
+	
 		SoftAssert softAssert = new SoftAssert();
 
 		WelcomePage welcomePage = new WelcomePage(driver,log);

@@ -10,7 +10,7 @@ import theinternet.pages.WelcomePage;
 public class HoversPageTests extends TestUtilities{
 	@Test
 	public void user2ProfileTest() {
-		log.info("Starting user2ProfileTest");
+	
 		// Open HoversPage
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();

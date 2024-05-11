@@ -11,14 +11,14 @@ import theinternet.pages.WelcomePage;
 public class CheckBoxesPageTests extends TestUtilities{
 	@Test
 	public void selectingTwoCheckboxesTest() {
-		
-	log.info("Starting selectingTwoCheckboxesTest");
 	
 	/** open main page */
 	WelcomePage welcomePage = new WelcomePage(driver, log);
 	welcomePage.openPage();
+	
 	/** Click on the checkBox Link Text */
 	welcomePage.clickCheckboxesLink();
+	
 	/** Click on all the checkBoxes */
 	CheckBoxesPage checkBoxPage = new CheckBoxesPage(driver,log);
 	checkBoxPage.selectAllCheckboxes();

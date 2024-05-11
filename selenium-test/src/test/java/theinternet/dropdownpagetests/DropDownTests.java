@@ -18,6 +18,7 @@ public class DropDownTests extends TestUtilities {
 		DropdownPage dropdownPage = welcomePage.clickDropdownLink();
 
 		DropdownPage dropDownPage = new DropdownPage(driver, log);
+		
 		int countOptions = dropDownPage.getOptionCount();
 		for (int i = 1; i < countOptions; i++) {
 			log.info("Starting option" + i + "Test");

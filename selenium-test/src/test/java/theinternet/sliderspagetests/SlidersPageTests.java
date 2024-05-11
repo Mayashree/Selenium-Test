@@ -9,8 +9,6 @@ import theinternet.pages.WelcomePage;
 public class SlidersPageTests extends TestUtilities{
 	@Test
 	public void sliderTest() {
-		log.info("Starting sliderTest");
-
 		// Open HorizontalSliderPage
 		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();

@@ -1,7 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="DropDownTestSuite" verbose="1">
-	
+	<listeners>
+		<listener class-name="theinternet.base.TestListener"></listener>
+	</listeners>
 	<test name="DropDownTests">
 		<classes>
 			<class name="theinternet.dropdownpagetests.DropDownTests" />
