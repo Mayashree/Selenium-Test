@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [DragAndDropTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DragAndDropTests(failed)">
+<suite name="Failed suite [JavaScriptErrorPageTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="JavaScriptErrorPageTests(failed)">
     <classes>
-      <class name="theinternet.draganddroppagetests.DragAndDropPageTests">
+      <class name="theinternet.javascripterrorpagetests.JavaScriptErrorPageTests">
         <methods>
+          <include name="jsErrorTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="dragAToBTest"/>
         </methods>
-      </class> <!-- theinternet.draganddroppagetests.DragAndDropPageTests -->
+      </class> <!-- theinternet.javascripterrorpagetests.JavaScriptErrorPageTests -->
     </classes>
-  </test> <!-- DragAndDropTests(failed) -->
-</suite> <!-- Failed suite [DragAndDropTestSuite] -->
+  </test> <!-- JavaScriptErrorPageTests(failed) -->
+</suite> <!-- Failed suite [JavaScriptErrorPageTestSuite] -->

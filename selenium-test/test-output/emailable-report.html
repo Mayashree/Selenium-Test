@@ -8,11 +8,18 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">PositiveLogInTestSuite</th></tr>
-<tr><td><a href="#t0">PositiveLogInTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,212</td><td></td><td></td></tr>
+<tr><th colspan="8">JavaScriptErrorPageTestSuite</th></tr>
+<tr><td><a href="#t0">JavaScriptErrorPageTests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,478</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PositiveLogInTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PositiveLogInTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">theinternet.loginpagetests.PositiveLogInTests</td><td><a href="#m0">logInTest</a></td><td rowspan="1">1715459301183</td><td rowspan="1">6442</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">JavaScriptErrorPageTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">JavaScriptErrorPageTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">theinternet.javascripterrorpagetests.JavaScriptErrorPageTests</td><td><a href="#m0">jsErrorTest</a></td><td rowspan="1">1715461136217</td><td rowspan="1">3419</td></tr></tbody>
 </table>
-<h2>PositiveLogInTest</h2><h3 id="m0">theinternet.loginpagetests.PositiveLogInTests#logInTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>JavaScriptErrorPageTests</h2><h3 id="m0">theinternet.javascripterrorpagetests.JavaScriptErrorPageTests#jsErrorTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Severe error: https://298279967.log.optimizely.com/event?a=298279967&amp;d=298279967&amp;y=false&amp;n=https%3A%2F%2Fthe-internet.herokuapp.com%2F&amp;u=oeu1715461137170r0.59025988935522&amp;wxhr=true&amp;t=1715461137206&amp;f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+	Severe error: https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found),
+	Severe error: https://298279967.log.optimizely.com/event?a=298279967&amp;d=298279967&amp;y=false&amp;n=engagement&amp;g=298283957&amp;u=oeu1715461137170r0.59025988935522&amp;wxhr=true&amp;t=1715461139209&amp;f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+	Severe error: https://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading &apos;xyz&apos;)
+	at theinternet.javascripterrorpagetests.JavaScriptErrorPageTests.jsErrorTest(JavaScriptErrorPageTests.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
