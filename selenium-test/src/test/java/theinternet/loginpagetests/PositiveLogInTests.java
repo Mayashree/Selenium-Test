@@ -12,18 +12,18 @@ public class PositiveLogInTests extends TestUtilities{
 	@Test
 	public void logInTest() {
 		log.info("Starting logIn test");
-		WelcomePage welcomePage = new WelcomePage(driver,log);
-			
+		WelcomePage welcomePage = new WelcomePage(driver,log);	
 		/** Open main page */
 		welcomePage.openPage();
+		takeScreenshot("WelcomePage opened");
 		log.info("Main page is opened.");
 
 		/** Click on Form Authentication link */
 		LogInPage logInPage = welcomePage.clickFormAuthenticationLink();
-
+		takeScreenshot("LoginPage opened");
 		/** Execute Login */
 		SecureAreaPage securePage = logInPage.logIn("tomsmith", "SuperSecretPassword!");
-
+		takeScreenshot("SecureAreaPage opened");
 		/** Verifications
 		 new URL */
 		String expectedUrl = securePage.getPageUrl();
