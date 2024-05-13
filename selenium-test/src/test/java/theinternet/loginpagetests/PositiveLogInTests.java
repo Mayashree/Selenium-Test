@@ -1,5 +1,6 @@
 package theinternet.loginpagetests;
 
+import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,11 +9,11 @@ import theinternet.pages.LogInPage;
 import theinternet.pages.SecureAreaPage;
 import theinternet.pages.WelcomePage;
 
-public class PositiveLogInTests extends TestUtilities{
+public class PositiveLogInTests extends TestUtilities {
 	@Test
 	public void logInTest() {
-	
-		WelcomePage welcomePage = new WelcomePage(driver,log);	
+
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		/** Open main page */
 		welcomePage.openPage();
 		takeScreenshot("WelcomePage opened");
@@ -20,16 +21,28 @@ public class PositiveLogInTests extends TestUtilities{
 		/** Click on Form Authentication link */
 		LogInPage logInPage = welcomePage.clickFormAuthenticationLink();
 		takeScreenshot("LoginPage opened");
+
+		// Add new cookie
+		Cookie ck = new Cookie("username", "tomsmith", "the-internet.herokuapp.com", "/", null);
+		logInPage.setCookie(ck);
+
 		/** Execute Login */
 		SecureAreaPage securePage = logInPage.logIn("tomsmith", "SuperSecretPassword!");
 		takeScreenshot("SecureAreaPage opened");
-		/** Verifications
-		 new URL */
+
+		// Get cookies
+		String username = securePage.getCookie("username");
+		log.info("Username cookie: " + username);
+		String session = securePage.getCookie("rack.session");
+		log.info("Session cookie: " + session);
+		/**
+		 * Verifications new URL
+		 */
 		String expectedUrl = securePage.getPageUrl();
 		Assert.assertEquals(securePage.getCurrentUrl(), expectedUrl);
 
 		/** Log out button is visible */
-		Assert.assertTrue(securePage.isLogOutButtonVisible(),"logOutButton is not visible.");
+		Assert.assertTrue(securePage.isLogOutButtonVisible(), "logOutButton is not visible.");
 
 		/** Successful log in message */
 		String expectedSuccessMessage = securePage.expectedSuccessMessage();
