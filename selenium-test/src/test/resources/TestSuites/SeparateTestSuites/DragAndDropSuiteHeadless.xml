@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DragAndDropTestSuite" verbose="1">
+	<test name="DragAndDropTests-CHHeadless">
+		<parameter name="browser" value="chromeheadless"></parameter>
+		<classes>
+			<class name="theinternet.draganddroppagetests.DragAndDropPageTests" />
+		</classes>
+	</test>
+	<test name="DragAndDropTests-FFHeadless">
+		<parameter name="browser" value="firefoxheadless"></parameter>
+		<classes>
+			<class name="theinternet.draganddroppagetests.DragAndDropPageTests" />
+		</classes>
+	</test>
+	
+</suite>
